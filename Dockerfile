@@ -9,7 +9,3 @@ COPY unittests.cfg ${AIRFLOW_HOME}/unittests.cfg
 COPY airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
 COPY unittests/ ${AIRFLOW_HOME}/unittests
 COPY integrationtests ${AIRFLOW_HOME}/integrationtests
-
-copy script/entrypoint.sh /entrypoint.sh
-
-entrypoint ["/entrypoint.sh"]
